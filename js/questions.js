@@ -3,43 +3,44 @@ var data =
 	[
 		[
 			{
-				question: "In history of patient with cough, what drug in particular do we ask about",
-				option1: "Beta blockers",
-				option2: "ACE inhibitors",
-				option3: "ARB",
-				option4: "Diuretics",
-				answer: 2
-			},
-			{
-				question: "What does breathlessness on exertion point to?",
-				option1: "Asthma",
-				option2: "COPD",
-				option3: "Pneumonia",
-				option4: "All of the above",
-				answer: 4
-			},
-			{
-				question: "when should be Systemic antitussives recommended",
-				option1: "For a productive cough that interferes with sleep",
-				option2: "Any type of cough",
-				option3: "Usually not recommended",
+				question: "Unequal consolidation on a CXR can be caused by all except:",
+				option1: "Pulmonary oedema",
+				option2: "Pneumonia",
+				option3: "Pulmonary haemorrhage",
+				option4: "Pulmonary infarction",
 				answer: 1
 			},
 			{
-				question: "The following antitussive is present in opium but has no analgesic or addicting properties:",
-				option1: "Noscapine",
-				option2: "Codeine",
-				option3: "Pholcodeine",
-				option4: "Ethylmorphine",
-				answer: 1
-			},
-			{
-				question: "Mucokinetic is a drug which:",
-				option1: "PneumoniaReduces airway mucus secretion",
-				option2: "Increases airway mucus secretion",
-				option3: "Makes respiratory secretions more watery",
-				option4: "Stimulates mucociliary activity of bronchial epithelium",
+				question: "Physiological consequences of obstructive sleep apnoea usually include each of the following EXCEPT",
+				option1: "Stimulation of erythropoiesis",
+				option2: "Pulmonary vasoconstriction",
+				option3: "Tachycardia followed by bradycardia",
+				option4: "Systemic vasoconstriction",
 				answer: 3
+			},
+			{
+				question: "In chronic obstructive pulmonary disease (COPD), the variable most closely associated with prognosis is",
+				option1: "Arterial carbon dioxide partial pressure (PaC02)",
+				option2: "Arterial oxygen partial pressure (Pa02)",
+				option3: "Forced expiratory volume in one second (FEV1)",
+				option4: "Forced vital capacity (FVC)",
+				answer: 1
+			},
+			{
+				question: "The most useful clinical finding to exclude the presence of airflow limitation in a 60-year-old is",
+				option1: "History of never smoking",
+				option2: "Absence of hyperresonance to chest percussion",
+				option3: "Normal cardiac dullness to percussion",
+				option4: "Absence of pulsus paradoxus",
+				answer: 1
+			},
+			{
+				question: "The lobar collapse which is most easily missed on chest X-ray, is",
+				option1: "Right upper lobe",
+				option2: "Left lower lobe",
+				option3: "Right lower lobe",
+				option4: "Left upper lobe",
+				answer: 4
 			}
 		]
 	];

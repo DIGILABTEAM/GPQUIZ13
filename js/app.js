@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$(".menu").click(function () {
 		clearTimeout(timeID);
 		$(".more").fadeToggle("fast");
-		timeID = setTimeout(function () { $(".more").fadeOut("fast"); }, 1500);
+		timeID = setTimeout(function () { $(".more").fadeOut("fast"); }, 1000);
 	});
 	$(".more").click(function () {
 		$(".more").fadeOut("fast");
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 /*--------------Global Variables---------------*/
 var i, k = 0, cQuestion, score = 0;
-var qTimeID, fTimeID, eTimeID, interval, time = 15;
+var qTimeID, fTimeID, eTimeID, interval, time = 30;
 var checkArray = new Array();
 var sQuestions = new Queue();
 /*---------------------------------------------*/
@@ -59,7 +59,7 @@ function setI(temp) {
 	eTimeID = undefined;
 	interval = undefined;
 	removeClasses();
-	time = 15;
+	time = 30;
 	timer(0, 0);
 	i = temp;
 	$("#ready").addClass("ui-page-active");
@@ -185,9 +185,9 @@ function timer(time, animate) {
 
 function startTimer() {
 	enableOnClick();
-	time = 15;
+	time = 30;
 	$("#time").html(time);
-	timer(1, 10000);
+	timer(1, 30000);
 	document.getElementById("timerSound").play();
 	interval = setInterval(function () {
 		time--;
@@ -197,7 +197,7 @@ function startTimer() {
 			disableOnClick();
 			showCorrectOption();
 		}
-	}, 1500);
+	}, 1000);
 }
 
 function nextQuestion() {
@@ -224,11 +224,11 @@ function nextQuestion() {
 					setTimeout(function () {
 						window.location = "#results";
 						showResults();
-					}, 3000);
+					}, 30000);
 				}
-			}, 10100);
-		}, 200)
-	}, 3000);
+			},30000);
+		},3000);
+	},3000);
 }
 
 function hideAnimation() {
@@ -239,7 +239,7 @@ function hideAnimation() {
 			$("#hideAnim").fadeOut("fast", function () {
 				$("#hideAnim").removeClass("ui-page-active");
 			})
-		}, 300);
+		}, 1000);
 	});
 }
 
@@ -249,8 +249,8 @@ function startQuiz() {
 	updateQuestions();
 	setTimeout(function () {
 		startTimer();
-		fTimeID = setTimeout(function () { nextQuestion(); }, 15000);
-	}, 4000);
+		fTimeID = setTimeout(function () { nextQuestion(); }, 30000);
+	}, 1000);
 }
 
 function restartQuiz() {
@@ -264,7 +264,7 @@ function setScore(option) {
 	else {
 		clearTimeout(qTimeID);
 		clearInterval(interval);
-		timer((15.0 - time) / 15.0, 0);
+		timer((10.0 - time) / 10.0, 0);
 		disableOnClick();
 		document.getElementById("timerSound").pause();
 		document.getElementById("timerSound").currentTime = 0;
@@ -332,7 +332,7 @@ function setPercentage(percent) {
 			color: '#f1c40f'
 		},
 		animation: {
-			duration: 1000
+			duration: 20000,
 		},
 		emptyFill: 'rgba(0, 0, 0, 0.3)',
 		thickness: '20',
@@ -558,7 +558,7 @@ function setStatsPercentage() {
 			color: '#f1c40f'
 		},
 		animation: {
-			duration: 1000
+			duration: 30000
 		},
 		emptyFill: 'rgba(0, 0, 0, 0.3)',
 		thickness: '20',
@@ -617,7 +617,7 @@ function reset() {
 	eTimeID = undefined;
 	interval = undefined;
 	removeClasses();
-	time = 15;
+	time = 30;
 	timer(0, 0);
 }
 

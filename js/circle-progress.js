@@ -64,7 +64,7 @@ License: MIT
          * Animation config (see jQuery animations: http://api.jquery.com/animate/)
          */
         animation: {
-            duration: 200,
+            duration: 30000,
             easing: 'circleProgressEasing'
         },
 
